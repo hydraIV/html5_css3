@@ -1,0 +1,81 @@
+@import 'variables';
+@import 'mixins';
+
+html,
+body {
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+}
+
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+h1,
+h2 {
+  margin: 0;
+}
+
+.big-wrap {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  width: 100%;
+  margin: 0 auto;
+  flex: 1;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+@include desktop() {
+  .container {
+    max-width: $container-width-desktop;
+  }
+};
+
+@include tablet() {
+  .container {
+    width: 100%;
+    max-width: $container-width-tablet;
+  }
+}
+
+@include mobile() {
+  .container {
+    width: 100%;
+    max-width: $container-width-mobile;
+  }
+}
+
+
+.invisible {
+  display: none;
+}
+
+svg path {
+  fill: inherit;
+  stroke: inherit;
+}
+

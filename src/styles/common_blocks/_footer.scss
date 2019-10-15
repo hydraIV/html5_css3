@@ -1,0 +1,124 @@
+@import '../partials/mixins';
+
+.footer {
+  display: flex;
+  padding: 60px 0;
+  background-color: $blue;
+
+  @include mobile {
+    padding: 34px 0;
+  }
+
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+
+    @include mobile {
+      flex-wrap: wrap;
+    }
+  }
+
+  &__info-white {
+    font-weight: bold;
+    font-size: $h2-font-size;
+    line-height: $h2-line-height;
+    color: $white;
+    margin-bottom: 20px;
+    width: 52%;
+
+    @include tablet {
+      width: 64%;
+    }
+
+    @include mobile {
+      width: 70%;
+      font-size: $light-mobile-font-size;
+      line-height: $h3-mobile-font-size;
+    }
+  }
+
+  &__info-red {
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: $h2-font-size;
+    line-height: $h2-line-height;
+    color: $red;
+    text-transform: uppercase;
+
+    @include tablet {
+      text-transform: lowercase;
+    }
+
+    @include mobile {
+      text-transform: lowercase;
+      font-size: $light-mobile-font-size;
+      line-height: $h3-mobile-font-size;
+    }
+  }
+
+  &__btn-link {
+    display: inline-block;
+    padding: 20px 65px;
+    border: 1px solid $red;
+    text-decoration: none;
+    color: $red;
+    box-sizing: border-box;
+    transition: .4s;
+
+    @include mobile {
+      width: 100%;
+      padding: 20px 0;
+      text-align: center;
+      font-weight: bold;
+      font-size: $h2-mobile-font-size;
+      line-height: $h2-mobile-line-height;
+    }
+
+    &:hover {
+      background-color: $dark-red;
+      color: $white;
+    }
+  }
+
+  &__social-wrap {
+    @include mobile {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 20px;
+    }
+  }
+
+  &__icon-social {
+    fill: $white;
+    width: 46px;
+    transition: .4s;
+
+    @include mobile {
+      width: 24px;
+    }
+
+    &:hover {
+      fill: $red;
+    }
+  }
+
+  &__social-icon {
+    margin-bottom: 50px;
+    @include mobile {
+      margin: 0 35px 0 0;
+    }
+  }
+
+  &__copyright {
+    margin-top: 46px;
+    width: 100%;
+    text-align: right;
+    font-size: $light-text-font-size;
+    letter-spacing: 0.025em;
+    color: #fff;
+    @include mobile {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,113 @@
+@import '../partials/mixins';
+@import '../partials/variables';
+
+.hero {
+    &__main-content {
+        min-height: calc(100vh - #{$desktop-header-height} - #{$hero_footer_height});
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &__box {
+
+        }
+        &__title-box-wrap {
+            width: 360px;
+            min-height: calc(100vh - #{$desktop-header-height} - #{$hero_footer_height});
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            .hero-title {
+                min-height: calc((100vh - #{$desktop-header-height} - #{$hero_footer_height})/2);
+                h1 {
+                    font-weight: bold;
+                    font-size: 60px;
+                    line-height: 82px;
+                }
+                p {
+                    font-weight: bold;
+                    font-size: 12px;
+                    line-height: 16px;
+                    letter-spacing: 1.75385px;
+                    text-transform: uppercase;
+                }
+            }
+            .hero-title-rest {
+                width: 100%;
+                min-height: calc((100vh - #{$desktop-header-height} - #{$hero_footer_height})/2 - 1px);
+                background-color: $blue;
+            }
+        }
+    }
+    &__footer {
+        display: flex;
+        justify-content: center;
+        min-height: $hero_footer_height;
+        padding-bottom: 40px;
+    }
+    &__slider-control {
+        min-height: 100%;
+        width: 120px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .arrow-wrap {
+            cursor: pointer;
+        }
+        .arrow-wrap:first-child {
+            margin-bottom: 29px;
+        }
+        .arrow-wrap:last-child {
+            margin-top: 29px;
+        }
+    }
+    .slider-titles-wrap {
+        min-width: $container-width-desktop;
+    }
+    &__slider-titles {
+        background-color: $white;
+        min-height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &__title {
+            padding-right: 120px;
+            .number {
+                font-size: 24px;
+                line-height: 33px;
+                letter-spacing: 2px;
+                color: $dark_grey;
+            }
+            h2 {
+                font-weight: bold;
+                font-size: 20px;
+                line-height: 32px;
+                letter-spacing: 1.42857px;
+                color: $black;
+            }
+            .subtitle {
+                font-weight: 300;
+                font-size: 14px;
+                line-height: 19px;
+                letter-spacing: 1px;
+                color: $dark_grey;
+            }
+        }
+    }
+    &__social-links {
+        min-height: 100%;
+        width: 120px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.picture {
+    position: relative;
+    z-index: -999;
+    background-color: $blue;
+    min-height: 100%;
+    min-width: 90vw;
+}
