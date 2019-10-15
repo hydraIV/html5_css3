@@ -2,8 +2,10 @@
 @import '../partials/variables';
 
 .hero {
+    max-height: calc(100vh - #{$desktop-header-height});
+    padding-bottom: 40px;
     &__main-content {
-        min-height: calc(100vh - #{$desktop-header-height} - #{$hero_footer_height});
+        min-height: calc(100vh - #{$desktop-header-height} - #{$hero_footer_height} - 40px);
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -19,14 +21,14 @@
         }
         &__title-box-wrap {
             width: 20vw;
-            min-height: calc(100vh - #{$desktop-header-height} - #{$hero_footer_height});
+            min-height: calc(100vh - #{$desktop-header-height} - #{$hero_footer_height} - 40px);
             display: flex;
             flex-direction: column;
             justify-content: space-between;
             .hero-title {
                 display: flex;
                 align-items: center;
-                min-height: calc((100vh - #{$desktop-header-height} - #{$hero_footer_height})/2);
+                min-height: calc((100vh - #{$desktop-header-height} - #{$hero_footer_height} - 40px)/2);
                 h1 {
                     font-weight: bold;
                     font-size: 60px;
@@ -51,7 +53,6 @@
         display: flex;
         justify-content: center;
         min-height: $hero_footer_height;
-        padding-bottom: 40px;
     }
     &__slider-control {
         min-height: 100%;
