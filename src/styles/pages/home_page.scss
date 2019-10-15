@@ -42,7 +42,7 @@
             }
             .hero-title-rest {
                 width: 100%;
-                min-height: calc((100vh - #{$desktop-header-height} - #{$hero_footer_height})/2 - 1px);
+                min-height: calc((100vh - #{$desktop-header-height} - #{$hero_footer_height})/2);
                 background-color: $blue;
             }
         }
@@ -75,6 +75,7 @@
         justify-content: space-between;
         align-items: center;
         max-width: $container-width-desktop;
+        min-width: $container-width-desktop;
         &__second {
             width: 10vw;
             max-width: 10vw;
@@ -107,6 +108,7 @@
                 color: $black;
             }
             .subtitle {
+                margin-top: 8px;
                 font-weight: 300;
                 font-size: 14px;
                 line-height: 19px;
