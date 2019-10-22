@@ -13,12 +13,12 @@
     <link rel="stylesheet" href="./styles/main.css">
 </head>
 <body>
-<div class="big-wrap" itemscope itemtype="http://schema.org/Organization">
+<div class="big-wrap">
     <div class="content">
         <header class="header">
             <div class="container">
                 <nav class="nav">
-                    <a href="#" class="logo"><img src="./assets/images/logo.svg" alt="MIHOME"></a>
+                    <a href="#" class="logo"><img src="assets/images/logo.svg" alt="MIHOME"></a>
                     <div class="nav__menu">
                         <a href="#" class="nav__menu__menu-link">home</a>
                         <a href="#" class="nav__menu__menu-link">about</a>
@@ -36,9 +36,8 @@
         <div class="container">
             <div class="hero__main-content">
                 <div class="hero__main-content__box">
-                    <div class="overlay"></div>
-                        <img src="../assets/images/hero_bg.jpg" alt="Background">
-                    </div>
+                    <div class="img-bg"></div>
+                </div>
                 <div class="hero__main-content__title-box-wrap">
                     <div class="hero-title">
                         <div>
@@ -54,10 +53,10 @@
             <aside>
                 <div class="hero__slider-control">
                     <div class="arrow-wrap">
-                        <img src="./assets/images/arrow_up.svg" alt="Next slide">
+                        <img src="assets/images/arrow-prev.svg" alt="Next slide">
                     </div>
                     <div class="arrow-wrap">
-                        <img src="./assets/images/arrow_down.svg" alt="Prev slide">
+                        <img src="assets/images/arrow-next.svg" alt="Prev slide">
                     </div>
                 </div>
             </aside>
@@ -66,21 +65,18 @@
                     <div class="hero__slider-titles">
                         <div class="hero__slider-titles__title">
                             <div class="number">01.</div>
-                            <h2>Contemporary New Build
-                                <br>With Character.</h2>
+                            <h2>Contemporary New Build. With Character.</h2>
                             <div class="subtitle">London</div>
                         </div>
                         <div class="hero__slider-titles__title">
-                            <div class="number">01.</div>
-                            <h2>Contemporary New Build
-                                <br>With Character.</h2>
-                            <div class="subtitle">London</div>
+                            <div class="number active">02.</div>
+                            <h2>Riverside Apartment. With Stunning Views.</h2>
+                            <div class="subtitle">Manchester</div>
                         </div>
                         <div class="hero__slider-titles__title">
-                            <div class="number">01.</div>
-                            <h2>Contemporary New Build
-                                <br>With Character.</h2>
-                            <div class="subtitle">London</div>
+                            <div class="number">03.</div>
+                            <h2>City Living With Country. Character.</h2>
+                            <div class="subtitle">Paris</div>
                         </div>
                     </div>
                 </div>
@@ -90,16 +86,159 @@
             </div>
             <aside>
                 <div class="hero__social-links">
-                    <img src="./assets/images/social-icons/facebook.svg" alt="facebook">
-                    <img src="./assets/images/social-icons/instagram.svg" alt="instagram">
-                    <img src="./assets/images/social-icons/pinterest.svg" alt="pinterest">
-                    <img src="./assets/images/social-icons/twitter.svg" alt="twitter">
+                    <a href="#"><img src="assets/images/social-icons/facebook.svg" alt="facebook"></a>
+                    <a href="#"><img src="assets/images/social-icons/instagram.svg" alt="instagram"></a>
+                    <a href="#"><img src="assets/images/social-icons/pinterest.svg" alt="pinterest"></a>
+                    <a href="#"><img src="assets/images/social-icons/twitter.svg" alt="twitter"></a>
                 </div>
             </aside>
         </div>
     </div>
+    <main>
+        <div class="services">
+            <div class="container">
+                <div class="services__block">
+                    <div class="services__block__half">
+                        <div class="card">
+                            <a href="#" class="card-small-img"><img src="https://picsum.photos/600/600?random=1" alt="Post image"></a>
+                            <div class="card__title">
+                                <a href="#"><h3>Renovations & Extensions</h3></a>
+                                <div>
+                                    <a href="#">View more</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <a href="#" class="card-small-img"><img src="https://picsum.photos/600/600?random=2" alt="Post image"></a>
+                            <div class="card__title">
+                                <a href="#"><h3>Interior Design</h3></a>
+                                <div>
+                                    <a href="#">View more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="services__block__half">
+                        <div class="card">
+                            <a class="card-large-img" href="#"><img src="https://picsum.photos/600/600?random=3" alt="Post image"></a>
+                            <div class="card__title">
+                                <a href="#"><h3>Work Spaces</h3></a>
+                                <div>
+                                    <a href="#">View more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="services__block">
+                        <div class="services__block__half">
+                            <div class="card">
+                                <a href="#"><img src="https://picsum.photos/600/600?random=4" alt="Post image"></a>
+                                <div class="card__title">
+                                    <a href="#"><h3>Renovations & Extensions</h3></a>
+                                    <div>
+                                        <a href="#">View more</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="services__block__half">
+                            <div class="card">
+                                <a href="#"><img src="https://picsum.photos/600/600?random=5" alt="Post image"></a>
+                                <div class="card__title">
+                                    <a href="#"><h3>Work Spaces</h3></a>
+                                    <div>
+                                        <a href="#">View more</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        <div class="card-slider">
+            <div class="card-slider__left-empty"></div>
+            <div class="container">
+                <div class="card-slider__wrap">
+                    <div class="card-slider__wrap__card">
+                        <a href="#"><img src="https://picsum.photos/400/400?random=6" alt="Post image"></a>
+                        <div class="card-slider__wrap__card__title-wrap">
+                            <a href="#"><h3>Enhance Your Life By Having A Sense Of Purpose</h3></a>
+                            <a href="#">Lifestyle</a>
+                        </div>
+                    </div>
+                    <div class="card-slider__wrap__card">
+                        <a href="#"><img src="https://picsum.photos/400/400?random=7" alt="Post image"></a>
+                        <div class="card-slider__wrap__card__title-wrap">
+                            <a href="#"><h3>How Great Is The Strength Of Your Belief</h3></a>
+                            <a href="#">Wellbeing</a>
+                        </div>
+                    </div>
+                    <div class="card-slider__wrap__card">
+                        <a href="#"><img src="https://picsum.photos/400/400?random=8" alt="Post image"></a>
+                        <div class="card-slider__wrap__card__title-wrap">
+                            <a href="#"><h3>How To Set Intentions That Energize You</h3></a>
+                            <a href="#">Lifestyle</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <aside>
+                <div class="card-slider__slider-control">
+                    <div class="card-slider__slider-control__arrow-wrap">
+                        <img src="assets/images/arrow-prev.svg" alt="Next slide">
+                    </div>
+                    <div class="card-slider__slider-control__arrow-wrap">
+                        <img src="assets/images/arrow-next.svg" alt="Prev slide">
+                    </div>
+                    <div class="card-slider__slider-control__arrow-wrap dots-wrap">
+                        <img src="assets/images/dots.svg" alt="Next slide">
+                    </div>
+                </div>
+            </aside>
+        </div>
+        <div class="companies">
+            <div class="container">
+                <div class="companies__wrap">
+                    <img src="assets/images/companies/abstract.svg" alt="abstract">
+                    <img src="assets/images/companies/thefox.svg" alt="abstract">
+                    <img src="assets/images/companies/cecis.svg" alt="abstract">
+                    <img src="assets/images/companies/origami.svg" alt="abstract">
+                </div>
+            </div>
+        </div>
+        <div class="sub">
+            <div class="container">
+                <div class="sub__wrap">
+                    <nav class="sub__wrap__nav">
+                        <a href="#" class="sub__wrap__nav__link">home</a>
+                        <a href="#" class="sub__wrap__nav__link">about</a>
+                        <a href="#" class="sub__wrap__nav__link">projects</a>
+                        <a href="#" class="sub__wrap__nav__link">services</a>
+                        <a href="#" class="sub__wrap__nav__link">article</a>
+                        <a href="#" class="sub__wrap__nav__link">contact</a>
+                    </nav>
+                    <div class="sub__wrap__social">
+                        <a href="#"><img src="assets/images/social-icons/facebook.svg" alt="facebook"></a>
+                        <a href="#"><img src="assets/images/social-icons/instagram.svg" alt="instagram"></a>
+                        <a href="#"><img src="assets/images/social-icons/pinterest.svg" alt="pinterest"></a>
+                        <a href="#"><img src="assets/images/social-icons/twitter.svg" alt="twitter"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sub-slider">
+            
+        </div>
+    </main>
     <footer class="footer">
-        
+        <div class="container">
+            <div class="footer__wrap">
+                <div class="footer__wrap__logo"><img src="assets/images/footer-logo.svg" alt="MIHOME"></a></div>
+                <div class="footer__wrap__copyright">© 2018 Designed by Tran Mau Tri Tam</div>
+                <div class="footer__wrap__up"><img src="assets/images/up.svg" alt="MIHOME"></a></div>
+            </div>
+        </div>
     </footer>
 </div>
 

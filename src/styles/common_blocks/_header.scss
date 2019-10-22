@@ -1,4 +1,5 @@
 @import '../partials/mixins';
+@import '../partials/variables';
 
 .container {
   width: $container-width-desktop;
@@ -24,6 +25,9 @@
       &__menu-link {
         margin-right: 60px;
         color: $ligth_grey;
+        &:hover {
+          color: $black;
+        }
         &:last-child {
           margin-right: 0px;
         }
@@ -33,6 +37,10 @@
       padding: 14px 42px;
       color: $black;
       border: 1px solid $ligth_grey;
+      transition: .3s;
+      &:hover {
+        background-color: $ligth_grey;
+      }
     }
   }
 }

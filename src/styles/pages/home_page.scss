@@ -11,8 +11,10 @@
         align-items: center;
         position: relative;
         &__box {
-            img {
+            .img-bg {
                 position: absolute;
+                background: linear-gradient(to right, rgba(106, 17, 203, .3) 0%, rgba(247, 250, 255, .6) 100%), url('/assets/images/hero_bg.jpg');
+                background-size: cover;
                 top: 0px;
                 width: 70vw;
                 height: 100%;
@@ -92,6 +94,10 @@
         align-items: center;
         &__title {
             padding-right: 120px;
+            cursor: pointer;
+            &:hover .number {
+                color: $hero_slider_control_hover;
+            }
             &:first-child {
                 margin-left: 120px;
             }
@@ -100,6 +106,10 @@
                 line-height: 33px;
                 letter-spacing: 2px;
                 color: $dark_grey;
+                transition: .3s;
+            }
+            .active {
+                color: $hero_slider_control_hover;
             }
             h2 {
                 font-weight: bold;
@@ -130,5 +140,198 @@
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
+        a {
+            cursor: pointer;
+        }
+    }
+}
+.services {
+    margin-top: 80px;
+    &__block {
+        display: flex;
+        justify-content: space-between;
+        &__half {
+            max-width: calc(#{$container-width-desktop}/2);
+            .card {
+                img {
+                    transition: .3s;
+                    &:hover {
+                        -webkit-filter: grayscale(100%);
+                        filter: grayscale(100%);
+                    }
+                }
+                display: flex;
+                flex-direction: column;
+                .card-small-img {
+                    max-height: 490px;
+                    img {
+                        height: 490px;
+                        max-height: 490px;
+                        width: 100%;
+                        object-fit: cover;
+                        transition: all .3s cubic-bezier(.25,.8,.25,1);
+                    }
+                }
+                .card-large-img {
+                    min-height: 1209px;
+                    img {
+                        min-height: 1209px;
+                        width: 100%;
+                        object-fit: cover;
+                    }
+                }
+                &__title {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    padding-left: 80px;
+                    height: 228px;
+                    width: 100%;
+                    a h3 {
+                        font-weight: bold;
+                        font-size: 24px;
+                        line-height: 40px;
+                        color: $black;
+                        margin: 0px;
+                        transition: .3s;
+                        &:hover {
+                            color: $dark_grey;
+                        }
+                    }
+                    a {
+                        display: inline-block;
+                        font-weight: 300;
+                        font-size: 14px;
+                        line-height: 19px;
+                        color: $dark_grey;
+                        margin-top: 18px;
+                    }
+                }
+            }
+        }
+    }
+}
+.companies {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.0925611);
+    border-top: 1px solid rgba(0, 0, 0, 0.0925611);
+    &__wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        min-height: 168px;
+    }
+}
+.card-slider {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__left-empty {
+        min-height: 360px;
+        width: 120px;
+    }
+    &__slider-control {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        min-height: 360px;
+        width: 120px;
+        cursor: pointer;
+        &__arrow-wrap {
+            display: flex;
+            justify-content: center;
+            min-height: 120px;
+            min-width: 120px;
+            &:first-child {
+                align-items: flex-end;
+                margin-bottom: 26px;
+            }
+            &:nth-child(2) {
+                align-items: flex-start;
+                margin-top: 26px;
+            }
+        }
+        .dots-wrap {
+            align-items: center;
+            background-color: $ligth-grey;
+            transition: .3s;
+            &:hover {
+                background-color: $dark-grey;
+            }
+        }
+    }
+    &__wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 120px 0px 120px 0px;
+        &__card {
+            &:first-child {
+                margin-right: 80px;
+            }
+            &:last-child {
+                margin-left: 80px;
+            }
+            img {
+                transition: all .3s cubic-bezier(.25,.8,.25,1);
+                max-height: 270px;
+                width: 100%;
+                object-fit: cover;
+                &:hover {
+                    -webkit-filter: grayscale(100%);
+                    filter: grayscale(100%);
+                }
+            }
+            &__title-wrap {
+                a {
+                    text-decoration: none;
+                    color: $dark-grey;
+                    font-weight: 300;
+                    font-size: 14px;
+                    line-height: 19px;
+                    letter-spacing: 1px;
+                    h3 {
+                        font-weight: bold;
+                        font-size: 20px;
+                        line-height: 32px;
+                        color: $black;
+                    }
+                }
+            }
+        }
+    }
+}
+.sub {
+    &__wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        min-height: 120px;
+        &__nav {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            a {
+                text-decoration: none;
+                margin-right: 60px;
+                color: $ligth_grey;
+                &:hover {
+                color: $black;
+                }
+                &:last-child {
+                margin-right: 0px;
+                }
+            }
+        }
+        &__social {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            a {
+                margin-left: 40px;
+            }
+        }
     }
 }
