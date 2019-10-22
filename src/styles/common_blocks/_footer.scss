@@ -1,0 +1,22 @@
+@import '../partials/mixins';
+@import '../partials/variables';
+
+.footer {
+  min-height: 80px;
+  background-color: $black;
+  color: $ligth_grey;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 24px;
+    &__up {
+      cursor: pointer;
+    }
+  }
+}
