@@ -11,7 +11,7 @@
 node_modules/
 
 # build directories
-build/
+# build/
 
 # Log files
 logs
