@@ -1,0 +1,46 @@
+@import '../partials/mixins';
+@import '../partials/variables';
+
+.container {
+  width: $container-width-desktop;
+  margin: 0 auto;
+}
+
+.header {
+  a {
+    text-decoration: none;
+    padding: 15px 0px;
+  }
+  background-color: $white;
+  .nav {
+    min-height: $desktop-header-height;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include nav-font;
+    &__menu {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      &__menu-link {
+        margin-right: 60px;
+        color: $ligth_grey;
+        &:hover {
+          color: $black;
+        }
+        &:last-child {
+          margin-right: 0px;
+        }
+      }
+    }
+    &__brief-us {
+      padding: 14px 42px;
+      color: $black;
+      border: 1px solid $ligth_grey;
+      transition: .3s;
+      &:hover {
+        background-color: $ligth_grey;
+      }
+    }
+  }
+}

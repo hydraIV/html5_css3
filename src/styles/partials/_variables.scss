@@ -1,0 +1,62 @@
+@font-face {
+  font-family: 'Ubuntu', suns-serif;
+  src: url("../../assets/fonts/Ubuntu-Bold.ttf") format('ttf'),
+  url("../../assets/fonts/Ubuntu-Light.ttf") format('ttf'),
+  url("../../assets/fonts/Ubuntu-Regular.ttf") format('ttf');
+  font-style: normal;
+}
+
+// The font size set on the root html element.
+$base-font-size: 18px;
+
+// The base line height determines the basic unit of vertical rhythm.
+$base-line-height: 21px;
+
+// The length unit in which to output vertical rhythm values.
+// Supported values: px, em, rem.
+$base-unit: 'em' !default;
+
+// The default font family.
+$base-font-family: 'Ubuntu', sans-serif;
+
+// The amount lists and blockquotes are indented.
+$indent-amount: 40px !default;
+
+//Main colors
+$white: #FFFEFB;
+$black: #181C27;
+$ligth_grey: #BFC3CF;
+$dark_grey: #787D88;
+$hero_slider_control_hover: #669EFE;
+$blue: #BEDFEA;
+
+//Breakpoints
+$desktop-width: 1440px;
+$tablet-width: 768px;
+$mobile-width: 320px;
+
+$container-width-desktop: 80vw;
+$container-width-tablet: 1160px;
+$container-width-mobile: 1160px;
+
+//Font sizes
+$big-title-font-size: 96px;
+$h1-font-size: 64px;
+$h2-font-size: 24px;
+$h3-font-size: 18px;
+$light-text-font-size: 14px;
+
+// line heights
+$big-title-line-height: 120px;
+$h1-line-height: 74px;
+$h2-line-height: 28px;
+$h3-line-height: 21px;
+$btn-line-height: 16px;
+
+//Header
+$desktop-header-height: 120px;
+$tablet-header-height: 120px;
+$mobile-header-height: 60px;
+
+//Home page
+$hero_footer_height: 216px;

@@ -1,0 +1,27 @@
+@import 'variables';
+
+// Mixins for media
+@mixin desktop {
+  @media screen and (min-width: $desktop-width) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media screen and (min-width: $tablet-width) and (max-width: $desktop-width - 1px) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media screen and (min-width: $mobile-width) and (max-width: $tablet-width - 1px) {
+    @content;
+  }
+}
+
+@mixin nav-font {
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 16px;
+  text-transform: uppercase;
+}
